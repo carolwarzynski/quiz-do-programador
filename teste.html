@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+ <title>Quiz do Programador</title> 
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+   <header>
+  <h1>Quiz para Programadores</h1>
+</header>
+
+    <div class="pergunta" data-correta="b">
+      <p>1. O que significa HTML?</p>
+
+      <label>
+        <input type="radio" name="q1" value="a">
+        Hyperlinks and Text Markup Language
+      </label>
+
+      <label>
+        <input type="radio" name="q1" value="b">
+        HyperText Markup Language
+      </label>
+
+      <label>
+        <input type="radio" name="q1" value="c">
+        Home Tool Markup Language
+      </label>
+
+      <p class="feedback"></p>
+    </div>
+
+    <div class="pergunta" data-correta="a">
+      <p>2. Qual linguagem é usada para estilizar páginas web?</p>
+
+      <label>
+        <input type="radio" name="q2" value="a">
+        CSS
+      </label>
+
+      <label>
+        <input type="radio" name="q2" value="b">
+        HTML
+      </label>
+
+      <label>
+        <input type="radio" name="q2" value="c">
+        Java
+      </label>
+
+      <p class="feedback"></p>
+    </div>
+
+    <div class="pergunta" data-correta="c">
+      <p>3. Qual linguagem adiciona interatividade ao site?</p>
+
+      <label>
+        <input type="radio" name="q3" value="a">
+        HTML
+      </label>
+
+      <label>
+        <input type="radio" name="q3" value="b">
+        CSS
+      </label>
+
+      <label>
+        <input type="radio" name="q3" value="c">
+        JavaScript
+      </label>
+
+      <p class="feedback"></p>
+
+      
+    </div>
+
+    <div class="pergunta" data-correta="c">
+  <p>Qual método é usado para selecionar um elemento pelo ID no JavaScript?</p>
+
+  <label><input type="radio" name="q3" value="a"> querySelectorAll()</label>
+  <label><input type="radio" name="q3" value="b"> getElementsByClassName()</label>
+  <label><input type="radio" name="q3" value="c"> getElementById()</label>
+
+  <p class="feedback"></p>
+</div>
+
+<div class="pergunta" data-correta="b">
+  <p>Qual propriedade CSS é usada para alterar a cor do texto?</p>
+
+  <label><input type="radio" name="q4" value="a"> background</label>
+  <label><input type="radio" name="q4" value="b"> color</label>
+  <label><input type="radio" name="q4" value="c"> font-style</label>
+
+  <p class="feedback"></p>
+</div>
+
+<div class="pergunta" data-correta="a">
+  <p>Qual comando Git envia commits locais para o repositório remoto?</p>
+
+  <label><input type="radio" name="q5" value="a"> git push</label>
+  <label><input type="radio" name="q5" value="b"> git pull</label>
+  <label><input type="radio" name="q5" value="c"> git clone</label>
+
+  <p class="feedback"></p>
+</div>
+
+
+
+    <button type="button" onclick="finalizarQuiz()">
+      Finalizar Quiz
+    </button>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
