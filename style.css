@@ -1,96 +1,190 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600&display=swap');
+/* FONTE MODERNA */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Inter', sans-serif;
 }
 
+/* BODY */
 body {
-  background: #0f172a;
-  color: #e5e7eb;
-  padding: 30px;
+  background: #0c0f1a;
+  color: #f0f0f0;
+  overflow-x: hidden;
 }
 
-/* HEADER */
-header {
+/* HERO COM VÍDEO */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* ocupa toda a tela */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero__video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.7));
+  z-index: 2;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+}
+
+.hero__content h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.hero__content p {
+  font-size: 1.6rem;
+  opacity: 0.85;
+}
+
+/* QUIZ CONTAINER */
+.quiz-container {
+  width: 100%;
   max-width: 900px;
-  margin: auto;
-  margin-bottom: 30px;
-  padding: 25px;
-  background: #020617;
-  border-left: 6px solid #38bdf8;
-  border-radius: 10px;
-  text-align:center; 
-}
-
-
-header h1 {
-  color: #38bdf8;
-  margin-bottom: 10px;
-  text-align:center; 
-}
-
-header p {
-  color: #94a3b8;
+  margin: -100px auto 60px; /* sobe um pouco sobre a transição do hero */
+  padding: 0 20px;
 }
 
 /* PERGUNTAS */
 .pergunta {
-  max-width: 900px;
-  margin: 20px auto;
-  padding: 25px;
-  background: #020617;
-  border-radius: 10px;
-  border: 1px solid #1e293b;
+  background: rgba(31,34,51,0.85);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  padding: 35px;
+  margin: 25px 0;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pergunta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 35px rgba(0,0,0,0.7);
 }
 
 .pergunta p {
-  margin-bottom: 15px;
-  font-size: 1.05rem;
+  font-size: 1.2rem;
+  margin-bottom: 25px;
 }
 
+/* OPÇÕES */
 label {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 15px;
+  padding: 14px 20px;
+  border-radius: 15px;
   cursor: pointer;
+  background: #1e243b;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+label:hover {
+  background: #27304f;
+  border-color: #4b6cb7;
 }
 
 input[type="radio"] {
-  margin-right: 8px;
-  accent-color: #38bdf8;
+  margin-right: 12px;
+  accent-color: #4b6cb7;
 }
 
 /* FEEDBACK */
 .feedback {
-  margin-top: 12px;
-  font-weight: bold;
+  margin-top: 18px;
+  font-weight: 700;
+  font-size: 1.05rem;
 }
 
 .acertou {
-  color: #22c55e;
+  color: #3ace7d;
 }
 
 .errou {
-  color: #ef4444;
+  color: #e74c4c;
 }
 
 /* BOTÃO */
 button {
   display: block;
-  margin: 40px auto;
-  padding: 14px 30px;
-  font-size: 1rem;
-  background: #38bdf8;
+  margin: 35px auto;
+  padding: 16px 36px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background: linear-gradient(90deg, #7f5af0, #38bdf8);
+  background-size: 200% 200%;
   border: none;
-  border-radius: 8px;
-  color: #020617;
+  border-radius: 18px;
+  color: #fff;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  animation: buttonGradient 4s ease infinite;
 }
 
 button:hover {
-  background: #0ea5e9;
+  transform: scale(1.08);
 }
 
+@keyframes buttonGradient {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+/* PROGRESS BAR */
+.progress {
+  height: 12px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 12px;
+  margin: 25px 0;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #7f5af0, #38bdf8);
+  border-radius: 12px;
+  transition: width 0.6s ease;
+  box-shadow: 0 0 12px #38bdf8;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  .hero__content h1 {
+    font-size: 3rem;
+  }
+  .hero__content p {
+    font-size: 1.2rem;
+  }
+  .pergunta {
+    padding: 25px;
+  }
+}
