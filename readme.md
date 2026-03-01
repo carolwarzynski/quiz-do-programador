@@ -1,54 +1,32 @@
-# 🧠 Quiz Interativo para Programadores
+# Quiz do Programador 💻
 
-Projeto desenvolvido com o objetivo de praticar e consolidar conhecimentos em **HTML, CSS e JavaScript**, simulando um quiz interativo voltado para programadores iniciantes.
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-O foco do projeto é oferecer **feedback em tempo real**, boa experiência do usuário e um visual moderno inspirado em ambientes de desenvolvimento (Visual Studio Code / Dark Mode).
-
----
-
-## 🚀 Funcionalidades
-
-- Quiz com múltiplas perguntas sobre programação
-- Correção automática das respostas
-- Feedback imediato por pergunta:
-  - ✅ Resposta correta
-  - ❌ Resposta incorreta com indicação da alternativa correta
-- Interface dark com estética tecnológica
-- Projeto 100% executado no navegador (sem backend)
+Um **quiz interativo de programação** para testar conhecimentos de forma divertida, combinando **design moderno, cores neon e animações suaves**.
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## 🌟 Visão do Projeto
 
-- **HTML5** — estrutura e semântica da página  
-- **CSS3** — estilização com tema dark/tech  
-- **JavaScript (Vanilla)** — lógica do quiz e manipulação do DOM  
+- Cabeçalho **full-screen com vídeo de digitação de códigos**  
+- Título e subtítulo centralizados sobre o vídeo  
+- Perguntas em **cards com blur e sombras**  
+- Botões com **gradiente animado azul/roxo neon**  
+- Feedbacks de respostas corretas/incorretas em cores neon  
+- Progress bar estilizada mostrando o avanço do quiz  
 
----
-
-## 🎨 Interface
-
-O design foi pensado para remeter a ambientes de desenvolvimento, utilizando:
-- fundo escuro
-- cores contrastantes
-- tipografia monoespaçada
-- layout em cards para as perguntas
+![Exemplo do Quiz](https://i.imgur.com/your-screenshot-link.png) <!-- Substitua pelo seu screenshot ou GIF -->
 
 ---
 
-## 📚 O que aprendi com esse projeto
+## 🚀 Tecnologias
 
-- Estruturação de páginas com HTML semântico
-- Estilização moderna com CSS
-- Manipulação do DOM com JavaScript
-- Debug de erros comuns (404, MIME type, carregamento de scripts)
-- Organização de código para projetos de portfólio
-- Boas práticas como evitar uso excessivo de `!important`
+- **HTML5**  
+- **CSS3** (gradientes, blur, animações)  
+- **JavaScript** (interatividade do quiz)  
 
 ---
 
-## 📂 Como executar o projeto
-
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+## 📂 Estrutura do Projeto
